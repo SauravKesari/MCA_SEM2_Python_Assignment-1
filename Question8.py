@@ -2,7 +2,7 @@ rows=int(input("Enter the rows"))
 cols=int(input("Enter cols"))
 
 matrix=[]
-temp=[]
+temp=[[0,0,0],[0,0,0],[0,0,0]]
 for i in range(rows):
     mylist=[]
     for j in range(cols):
@@ -76,12 +76,12 @@ print("Minimum is:",min,"Maximum is:",max)
 
 #transpose of Matrix
 for i in range(cols):
-    templist=[]
+    #templist=[]
     for j in range(rows):
-        templist.append()
+        #templist.append()
         temp[j][i]=matrix[i][j]
         
 for i in range(cols):
      for j in range(rows):
-         print(temp[j][i],end='\t')
+         print(temp[i][j],end='\t')
      print("")    
